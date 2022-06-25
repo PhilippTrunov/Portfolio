@@ -1,0 +1,217 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.header {
+background: #1F1F1F;
+padding-bottom: 130px;
+margin: 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.hat {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    margin-left: 64px;
+    font-weight: light;
+}
+.offer {
+    padding-top: 280px;
+    width: 308px;
+}
+.btn {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(21,185,185);
+    background: linear-gradient(180deg, rgba(21,185,185,1) 0%, rgba(60,29,255,1) 100%);
+    display: block;
+    width: 205px;
+    padding: 10px 0;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.main_img {
+    width: 566px;
+}
+.imag {
+  margin-right: 25px;  
+}
+.imag:hover {
+    opacity: 0.9;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.about {
+        background: #1F1F1F;
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 185px;
+        
+}
+.bg {
+    background: #3F3F3F;
+    width: 361px;
+    height: 463px;
+}
+.about-wrapper {
+    display:flex;
+}
+.me_about {
+    width: 361px;
+    position: absolute;
+    top: 850px;
+    left: 5%;
+
+}
+.about_text {
+    padding-top: 123px;
+    padding-left: 233px;
+    width: 521px;
+}
+.h2_about {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.p_about {
+    font-size: 15px;
+    font-weight: light;
+    opacity: 0.7;
+}
+footer {
+    background: #171717;
+    padding-top: 35px;
+    padding-bottom: 30px;  
+}
+.last_h {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.request {
+    margin: 0 auto;
+    width: 600px;
+}
+input {
+    width: 150px;
+}
+.btn_form {
+    width: 50px;
+}
+.btn_form:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Надеюсь, что css вышло не слишком много для такого простого макета */
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+     .bg {
+        display: none;
+     }
+     .me_about {
+        width: 361px;
+     }
+    .about_text {
+        padding-top: 123px;
+        padding-left: 433px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;	
+	}
+    .offer {
+        padding-top: 250px; 
+    }
+    .about_text {
+        padding-top: 100px;
+        padding-left: 433px;
+    }
+    .main_img {
+        width: 490px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+    .main_img{
+        width: 300px;
+    }
+    .offer {
+        padding-top: 50px; 
+    }
+    .header {
+        padding-bottom: 30px;
+    }
+    .me_about {
+        display: none;
+    }
+    .about {
+        align-items: center;
+        padding-bottom: 80px;
+    }
+    .about_text {
+        padding:0;
+    }
+    .h2_about {
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+    .main {
+        flex-direction: column-reverse;
+        align-items:center
+        
+    }
+    .offer {
+        padding-top: 0px; 
+    }
+    .form_rg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .request {
+        width: auto;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+}
